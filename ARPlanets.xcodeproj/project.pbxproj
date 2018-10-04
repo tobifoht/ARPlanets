@@ -13,6 +13,7 @@
 		D21447F321660EB8008273E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D21447F121660EB8008273E5 /* Main.storyboard */; };
 		D21447F521660EBA008273E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D21447F421660EBA008273E5 /* Assets.xcassets */; };
 		D21447F821660EBA008273E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D21447F621660EBA008273E5 /* LaunchScreen.storyboard */; };
+		D21448002166150C008273E5 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21447FF2166150C008273E5 /* Planet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D21447F421660EBA008273E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D21447F721660EBA008273E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D21447F921660EBA008273E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D21447FF2166150C008273E5 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		D21447EA21660EB8008273E5 /* ARPlanets */ = {
 			isa = PBXGroup;
 			children = (
-				D21447EB21660EB8008273E5 /* AppDelegate.swift */,
-				D21447ED21660EB8008273E5 /* art.scnassets */,
-				D21447EF21660EB8008273E5 /* ViewController.swift */,
-				D21447F121660EB8008273E5 /* Main.storyboard */,
-				D21447F421660EBA008273E5 /* Assets.xcassets */,
-				D21447F621660EBA008273E5 /* LaunchScreen.storyboard */,
+				D2144804216616CB008273E5 /* Model */,
+				D2144803216616BA008273E5 /* View */,
+				D2144802216616A3008273E5 /* Controller */,
 				D21447F921660EBA008273E5 /* Info.plist */,
 			);
 			path = ARPlanets;
+			sourceTree = "<group>";
+		};
+		D2144802216616A3008273E5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D21447EB21660EB8008273E5 /* AppDelegate.swift */,
+				D21447EF21660EB8008273E5 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D2144803216616BA008273E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D21447F121660EB8008273E5 /* Main.storyboard */,
+				D21447ED21660EB8008273E5 /* art.scnassets */,
+				D21447F421660EBA008273E5 /* Assets.xcassets */,
+				D21447F621660EBA008273E5 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D2144804216616CB008273E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D21447FF2166150C008273E5 /* Planet.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D21448002166150C008273E5 /* Planet.swift in Sources */,
 				D21447F021660EB8008273E5 /* ViewController.swift in Sources */,
 				D21447EC21660EB8008273E5 /* AppDelegate.swift in Sources */,
 			);
