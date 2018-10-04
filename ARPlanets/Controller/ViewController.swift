@@ -20,7 +20,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     let sun = Planet(radius: 0.5, texture: "art.scnassets/8k_sun.jpg")
     
     
-
+// Grundlegende App Funktionen
+    
     @IBOutlet var sceneView: ARSCNView!
     
     override func viewDidLoad() {
